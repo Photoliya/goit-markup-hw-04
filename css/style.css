@@ -226,12 +226,7 @@ ul {
 
 .benefits {
     display: flex;
-}
-
-.benefits .item+.item,
-.works .item+.item,
-.team .item+.item {
-    margin-left: var(--uni-gap);
+    gap: var(--uni-gap);
 }
 
 .item-pics {
@@ -251,9 +246,8 @@ ul {
     margin-bottom: 8px;
 }
 
-
-
 /* section works */
+
 .section.features {
     padding-bottom: var(--section-gap);
 }
@@ -265,6 +259,10 @@ ul {
 .works {
     display: flex;
     margin-top: var(--uni-padding);
+}
+
+.works .item+.item {
+    margin-left: var(--uni-gap);
 }
 
 /* section team list*/
@@ -281,6 +279,7 @@ ul {
 .team {
     display: flex;
     margin-top: var(--uni-padding);
+    gap: var(--uni-gap);
 }
 
 .team .item {
@@ -303,10 +302,7 @@ ul {
 .team-icon-list {
     display: flex;
     justify-content: center;
-}
-
-.team-icon-list .item-icon+.item-icon {
-    margin-left: var(--uni-gap);
+    gap: var(--uni-gap);
 }
 
 .team-icon {
@@ -326,6 +322,7 @@ ul {
 }
 
 /* customers */
+
 .section-customers {
     padding-bottom: var(--section-gap);
 }
