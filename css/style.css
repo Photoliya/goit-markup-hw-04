@@ -172,14 +172,20 @@ ul {
 /* hero */
 .hero {
     background: var(--dark);
-    text-align: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
+}
+
+.hero-wrapper {
+    margin-left: auto;
+    margin-right: auto;
     background-repeat: no-repeat;
     background-image: linear-gradient(0deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
         url(../images/group-people-working.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    max-width: 1440px;
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 /* hero button */
@@ -229,12 +235,8 @@ ul {
     gap: var(--uni-gap);
 }
 
-.item-pics {
-    display: block;
-}
-
-.benefits-text {
-    margin-top: 8px;
+.benefits-sub {
+    margin-bottom: 8px;
 }
 
 .bg-icon {
@@ -263,6 +265,10 @@ ul {
 
 .works .item+.item {
     margin-left: var(--uni-gap);
+}
+
+.item-pics {
+    display: block;
 }
 
 /* section team list*/
@@ -342,21 +348,17 @@ ul {
     border: 1px solid var(--light-slate);
     border-radius: 4px;
     padding: 16px 31px;
+    color: var(--light-slate);
 }
 
 .client-item:hover,
 .client-item:focus {
     border-color: var(--pressed-state);
+    color: var(--pressed-state);
 }
-
 
 .client-icon {
-    fill: var(--light-slate);
-}
-
-.client-icon:hover,
-.client-icon:focus {
-    fill: var(--pressed-state);
+    fill: currentColor;
 }
 
 /* footer */
@@ -386,8 +388,14 @@ ul {
     display: flex;
 }
 
-.footer-icons-item {
-    padding-left: 120px;
+.footer-icons-items {
+    margin-left: 120px;
+}
+
+.foot-icon-list {
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 
 .foot-icon {
@@ -395,16 +403,11 @@ ul {
     padding: 8px;
     background-color: var(--body-text-color);
     border-radius: 50%;
-    margin-right: 16px;
 }
 
 .foot-icon:hover,
 .foot-icon:focus {
     background-color: var(--success);
-}
-
-.foot-icon:last-child {
-    margin-right: 0;
 }
 
 /* portfolio */
